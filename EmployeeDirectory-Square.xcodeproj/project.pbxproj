@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */; };
 		5E33196928B0022F00092729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196828B0022F00092729 /* AppDelegate.swift */; };
 		5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196A28B0022F00092729 /* SceneDelegate.swift */; };
 		5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDirectoryCell.swift; sourceTree = "<group>"; };
 		5E33196528B0022F00092729 /* EmployeeDirectory-Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmployeeDirectory-Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33196828B0022F00092729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E33196A28B0022F00092729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				5E33196828B0022F00092729 /* AppDelegate.swift */,
 				5E33196A28B0022F00092729 /* SceneDelegate.swift */,
 				5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */,
+				5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */,
 				5E33199828B011BC00092729 /* Main.storyboard */,
 				5E33197128B0023000092729 /* Assets.xcassets */,
 				5E33197328B0023000092729 /* LaunchScreen.storyboard */,
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */,
+				5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */,
 				5E33196928B0022F00092729 /* AppDelegate.swift in Sources */,
 				5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */,
 			);
