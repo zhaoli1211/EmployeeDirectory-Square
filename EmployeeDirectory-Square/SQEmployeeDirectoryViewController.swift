@@ -20,7 +20,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
   
   private func setupTableView() {
     tableView = UITableView(frame: self.view.bounds);
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    tableView.register(SQEmployeeDirectoryCell.self, forCellReuseIdentifier: cellIdentifier)
     tableView.dataSource = self
     tableView.delegate = self
     tableView.backgroundColor = UIColor.lightGray;
@@ -31,7 +31,9 @@ class SQEmployeeDirectoryViewController: UIViewController {
 // MARK: TableViewDelegate
 extension SQEmployeeDirectoryViewController: UITableViewDelegate
 {
-  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 88
+  }
 }
 
 // MARK: TableViewDataSourece
