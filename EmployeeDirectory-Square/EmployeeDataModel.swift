@@ -7,13 +7,33 @@
 
 import Foundation
 
-struct EmployeeDataModel {
-  var name : String
-  var imageSmallUrlString : String
-  var imageLargeUrlString : String
-  var phonenNumber : String
-  var email : String
-  var biography : String
-  var team : String
-  var type : String
+struct AllEmployeeData: Decodable {
+  let empoyeeData : [EmployeeDataModel]
+   
+   enum CodingKeys: String, CodingKey {
+      case empoyeeData = "employees"
+   }
+}
+
+struct EmployeeDataModel: Decodable {
+  enum CodingKeys: String, CodingKey {
+    case uuid = "uuid"
+    case fullName = "full_name"
+    case photoUrlSmall = "photo_url_small"
+    case photoUrlLarge = "photo_url_large"
+    case phoneNumber = "phone_number"
+    case emailAddress = "email_address"
+    case biography = "biography"
+    case team = "team"
+    case employeeType = "employee_type"
+  }
+  let uuid : String
+  let fullName : String
+  let photoUrlSmall : String
+  let photoUrlLarge : String
+  let phoneNumber : String
+  let emailAddress : String
+  let biography : String
+  let team : String
+  let employeeType : String
 }

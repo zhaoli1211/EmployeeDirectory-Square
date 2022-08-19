@@ -10,6 +10,7 @@
 		462420CEF09C60BA98458307 /* Pods_EmployeeDirectory_SquareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF2CB6F10366DDB7F2DE885 /* Pods_EmployeeDirectory_SquareTests.framework */; };
 		5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */; };
 		5E0415C228B02D3A003FA1A4 /* EmployeeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C128B02D3A003FA1A4 /* EmployeeDataModel.swift */; };
+		5E0415C428B02F1B003FA1A4 /* SQEmployeeDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */; };
 		5E33196928B0022F00092729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196828B0022F00092729 /* AppDelegate.swift */; };
 		5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196A28B0022F00092729 /* SceneDelegate.swift */; };
 		5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */; };
@@ -42,6 +43,7 @@
 		3D83741075E11BAA8851954F /* Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDirectoryCell.swift; sourceTree = "<group>"; };
 		5E0415C128B02D3A003FA1A4 /* EmployeeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataModel.swift; sourceTree = "<group>"; };
+		5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDataLoader.swift; sourceTree = "<group>"; };
 		5E33196528B0022F00092729 /* EmployeeDirectory-Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmployeeDirectory-Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33196828B0022F00092729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E33196A28B0022F00092729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				5E33197328B0023000092729 /* LaunchScreen.storyboard */,
 				5E33197628B0023000092729 /* Info.plist */,
 				5E0415C128B02D3A003FA1A4 /* EmployeeDataModel.swift */,
+				5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */,
 			);
 			path = "EmployeeDirectory-Square";
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */,
 				5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */,
 				5E33196928B0022F00092729 /* AppDelegate.swift in Sources */,
+				5E0415C428B02F1B003FA1A4 /* SQEmployeeDataLoader.swift in Sources */,
 				5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,11 +11,17 @@ class SQEmployeeDirectoryViewController: UIViewController {
   
   private var tableView: UITableView!
   private let cellIdentifier = "SQContactCell"
-  
+  private var dataLoader: SQEmployeeDataLoader!
+  private var employeeData: [EmployeeDataModel]?
+
   override func viewDidLoad() {
     super.viewDidLoad()
     setupTableView()
-    
+    dataLoader = SQEmployeeDataLoader()
+    dataLoader.LoadEmployeeData { data in
+      self.employeeData = data
+      self.tableView.reloadData()
+    }
   }
   
   private func setupTableView() {
@@ -45,6 +51,6 @@ extension SQEmployeeDirectoryViewController: UITableViewDataSource
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 1;
+    return employeeData?.count ?? 0;
   }
 }
