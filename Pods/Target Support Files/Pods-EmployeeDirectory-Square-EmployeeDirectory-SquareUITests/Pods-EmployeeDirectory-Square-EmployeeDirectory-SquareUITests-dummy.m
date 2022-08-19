@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests : NSObject
+@end
+@implementation PodsDummy_Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests
+@end

@@ -1,0 +1,6 @@
+framework module Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests {
+  umbrella header "Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
