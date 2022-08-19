@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 import SnapKit
 
 class SQEmployeeDirectoryCell: UITableViewCell {
@@ -16,6 +17,9 @@ class SQEmployeeDirectoryCell: UITableViewCell {
       employeePhoneLabel.text = employeeData?.phoneNumber
       employeeEmailLabel.text = employeeData?.emailAddress
       employeeBiographyLabel.text = employeeData?.biography
+      if let imageUrl = URL(string: employeeData?.photoUrlSmall ?? "") {
+        employeePhoto.kf.setImage(with: imageUrl)
+      }
     }
   }
   

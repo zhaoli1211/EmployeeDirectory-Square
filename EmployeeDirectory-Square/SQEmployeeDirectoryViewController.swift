@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class SQEmployeeDirectoryViewController: UIViewController {
   
@@ -13,7 +14,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
   private let cellIdentifier = "SQContactCell"
   private var dataLoader: SQEmployeeDataLoader!
   private var employeeData: [EmployeeDataModel]?
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupTableView()
@@ -25,12 +26,15 @@ class SQEmployeeDirectoryViewController: UIViewController {
   }
   
   private func setupTableView() {
-    tableView = UITableView(frame: self.view.bounds);
+    tableView = UITableView(frame: .zero);
     tableView.register(SQEmployeeDirectoryCell.self, forCellReuseIdentifier: cellIdentifier)
     tableView.dataSource = self
     tableView.delegate = self
-    tableView.backgroundColor = UIColor.lightGray;
+    tableView.separatorStyle = .none
     self.view.addSubview(tableView)
+    tableView.snp.makeConstraints { make in
+      make.top.left.right.bottom.equalToSuperview()
+    }
   }
 }
 
@@ -48,7 +52,6 @@ extension SQEmployeeDirectoryViewController: UITableViewDataSource
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SQEmployeeDirectoryCell
     cell.employeeData = employeeData?[indexPath.row];
-    
     return cell;
   }
   
