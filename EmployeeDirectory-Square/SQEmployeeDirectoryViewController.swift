@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SQEmployeeDirectoryViewController: UIViewController {
+  
+  var tableView: UITableView
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    tableView = UITableView(frame: self.view.bounds);
+    
   }
 
 
