@@ -113,6 +113,7 @@ class SQEmployeeDirectoryCell: UITableViewCell {
       make.left.equalTo(employeePhoto.snp.right).offset(8)
       make.bottom.equalToSuperview().offset(-4)
     }
+    self.selectionStyle = .none
   }
       
   required init?(coder aDecoder: NSCoder) {

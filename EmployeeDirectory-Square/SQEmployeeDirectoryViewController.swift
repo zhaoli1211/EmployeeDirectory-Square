@@ -31,6 +31,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
     tableView.dataSource = self
     tableView.delegate = self
     tableView.separatorStyle = .none
+    tableView.showsVerticalScrollIndicator = false
     self.view.addSubview(tableView)
     tableView.snp.makeConstraints { make in
       make.top.left.right.bottom.equalToSuperview()
@@ -55,7 +56,8 @@ extension SQEmployeeDirectoryViewController: UITableViewDataSource
     return cell;
   }
   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+  {
     return employeeData?.count ?? 0;
   }
 }
