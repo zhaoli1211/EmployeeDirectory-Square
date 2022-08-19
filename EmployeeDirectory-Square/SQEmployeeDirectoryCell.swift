@@ -10,6 +10,15 @@ import SnapKit
 
 class SQEmployeeDirectoryCell: UITableViewCell {
   
+  var employeeData : EmployeeDataModel? {
+    didSet {
+      employeeNameLabel.text = employeeData?.fullName
+      employeePhoneLabel.text = employeeData?.phoneNumber
+      employeeEmailLabel.text = employeeData?.emailAddress
+      employeeBiographyLabel.text = employeeData?.biography
+    }
+  }
+  
   private let employeePhoto : UIImageView = {
     let imgView = UIImageView(image: nil)
     imgView.contentMode = .scaleAspectFit
@@ -21,7 +30,7 @@ class SQEmployeeDirectoryCell: UITableViewCell {
   private let employeeNameLabel : UILabel = {
     let lable = UILabel()
     lable.textColor = .black
-    lable.font = UIFont.boldSystemFont(ofSize: 16)
+    lable.font = UIFont.boldSystemFont(ofSize: 14)
     lable.textAlignment = .left
     return lable
   }()
@@ -29,7 +38,7 @@ class SQEmployeeDirectoryCell: UITableViewCell {
   private let employeePhoneLabel : UILabel = {
     let lable = UILabel()
     lable.textColor = .black
-    lable.font = UIFont.systemFont(ofSize: 14)
+    lable.font = UIFont.systemFont(ofSize: 12)
     lable.textAlignment = .left
     lable.numberOfLines = 0
 
@@ -39,7 +48,7 @@ class SQEmployeeDirectoryCell: UITableViewCell {
   private let employeeEmailLabel : UILabel = {
     let lable = UILabel()
     lable.textColor = .black
-    lable.font = UIFont.boldSystemFont(ofSize: 14)
+    lable.font = UIFont.systemFont(ofSize: 12)
     lable.textAlignment = .left
 
     return lable
@@ -48,9 +57,10 @@ class SQEmployeeDirectoryCell: UITableViewCell {
   private let employeeBiographyLabel : UILabel = {
     let lable = UILabel()
     lable.textColor = .black
-    lable.font = UIFont.systemFont(ofSize: 14)
-    lable.textAlignment = .left
+    lable.font = UIFont.systemFont(ofSize: 12)
+    lable.textAlignment = .justified
     lable.numberOfLines = 0
+    lable.sizeToFit()
 
     return lable
   }()
@@ -92,11 +102,12 @@ class SQEmployeeDirectoryCell: UITableViewCell {
       make.height.equalTo(16)
     }
     
+    // TODO: change the label size base on text
     employeeBiographyLabel.snp.makeConstraints { make in
       make.top.equalTo(employeeEmailLabel.snp.bottom)
       make.right.equalToSuperview().offset(-4)
       make.left.equalTo(employeePhoto.snp.right).offset(8)
-      make.height.equalTo(16)
+      make.bottom.equalToSuperview().offset(-4)
     }
   }
       

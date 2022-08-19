@@ -8,6 +8,7 @@ target 'EmployeeDirectory-Square' do
   # Pods for EmployeeDirectory-Square
   pod 'Alamofire', '~> 5.6.2'
   pod 'SnapKit', '~> 5.6.0'
+  pod 'Kingfisher'
 
   target 'EmployeeDirectory-SquareTests' do
     inherit! :search_paths

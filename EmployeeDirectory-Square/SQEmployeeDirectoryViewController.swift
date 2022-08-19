@@ -46,7 +46,9 @@ extension SQEmployeeDirectoryViewController: UITableViewDelegate
 extension SQEmployeeDirectoryViewController: UITableViewDataSource
 {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SQEmployeeDirectoryCell
+    cell.employeeData = employeeData?[indexPath.row];
+    
     return cell;
   }
   
