@@ -8,7 +8,7 @@
 import Alamofire
 
 class SQEmployeeDataLoader: NSObject {
-  let employeeUrl = "https://s3.amazonaws.com/sq-mobile-interview/employees.json"
+  let employeeUrl = "https://s3.amazonaws.com/sq-mobile-interview/employees_malformed.json"
   
   override init() {
     super.init()

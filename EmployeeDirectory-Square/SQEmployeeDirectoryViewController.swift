@@ -24,7 +24,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
   
   private func setupNavigationItem() {
     self.navigationItem.title = "Employee Directory"
-    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(loadEmployeeData));
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(loadEmployeeData(_:)));
   }
   
   private func setupTableView() {

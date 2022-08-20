@@ -18,6 +18,7 @@ class SQEmployeeDirectoryCell: UITableViewCell {
       employeeEmailLabel.text = employeeData?.emailAddress
       employeeBiographyLabel.text = employeeData?.biography
       if let imageUrl = URL(string: employeeData?.photoUrlSmall ?? "") {
+        employeePhoto.image = nil
         employeePhoto.kf.setImage(with: imageUrl)
       }
     }
@@ -45,7 +46,6 @@ class SQEmployeeDirectoryCell: UITableViewCell {
     lable.font = UIFont.systemFont(ofSize: 12)
     lable.textAlignment = .left
     lable.numberOfLines = 0
-
     return lable
   }()
   
@@ -54,7 +54,6 @@ class SQEmployeeDirectoryCell: UITableViewCell {
     lable.textColor = .black
     lable.font = UIFont.systemFont(ofSize: 12)
     lable.textAlignment = .left
-
     return lable
   }()
       
@@ -65,7 +64,6 @@ class SQEmployeeDirectoryCell: UITableViewCell {
     lable.textAlignment = .justified
     lable.numberOfLines = 0
     lable.sizeToFit()
-
     return lable
   }()
       

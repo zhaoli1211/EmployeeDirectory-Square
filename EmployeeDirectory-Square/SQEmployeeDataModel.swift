@@ -27,13 +27,13 @@ struct SQEmployeeDataModel: Decodable {
     case team = "team"
     case employeeType = "employee_type"
   }
-  let uuid : String
-  let fullName : String
-  let photoUrlSmall : String
-  let photoUrlLarge : String
-  let phoneNumber : String
-  let emailAddress : String
-  let biography : String
-  let team : String
-  let employeeType : String
+  let uuid : String?
+  let fullName : String?
+  let photoUrlSmall : String?
+  let photoUrlLarge : String?
+  let phoneNumber : String?
+  let emailAddress : String?
+  let biography : String?
+  let team : String?
+  let employeeType : String?
 }
