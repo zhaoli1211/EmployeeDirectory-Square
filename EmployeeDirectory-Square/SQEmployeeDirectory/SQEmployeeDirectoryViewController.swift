@@ -12,14 +12,23 @@ import SwiftUI
 public class SQEmployeeDirectoryViewController: UIViewController {
   
   public var tableView: UITableView!
+  public var emptyStateView: UIView!
+
   private let cellIdentifier = "SQContactCell"
   public var dataLoader: SQEmployeeDataLoaderProtocal = SQEmployeeDataLoader()
-  public var employeeData: [SQEmployeeDataModel]?
+  public var employeeData: [SQEmployeeDataModel]? {
+    didSet {
+      tableView.isHidden = employeeData?.count == 0
+      emptyStateView.isHidden = !(employeeData?.count == 0)
+    }
+  }
   
   public override func viewDidLoad() {
     super.viewDidLoad()
+    setupEmptyStateView()
     setupTableView()
     setupNavigationItem()
+    employeeData = []
   }
   
   private func setupNavigationItem() {
@@ -39,6 +48,25 @@ public class SQEmployeeDirectoryViewController: UIViewController {
     self.view.addSubview(tableView)
     tableView.snp.makeConstraints { make in
       make.top.left.right.bottom.equalToSuperview()
+    }
+  }
+  
+  private func setupEmptyStateView() {
+    emptyStateView = UIView(frame: .zero)
+    let nullStateLable = UILabel(frame: .zero)
+    nullStateLable.text = "Please tap + icon to load"
+    nullStateLable.textAlignment = .center
+    nullStateLable.font = UIFont.systemFont(ofSize: 16)
+    nullStateLable.textColor = .black
+    self.view.addSubview(emptyStateView)
+    emptyStateView.snp.makeConstraints { make in
+      make.top.right.bottom.left.equalToSuperview()
+    }
+    emptyStateView.addSubview(nullStateLable)
+    nullStateLable.snp.makeConstraints { make in
+      make.center.equalToSuperview()
+      make.width.equalToSuperview()
+      make.height.equalTo(16)
     }
   }
   
