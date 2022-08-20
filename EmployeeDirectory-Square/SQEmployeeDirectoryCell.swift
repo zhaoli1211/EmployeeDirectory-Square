@@ -11,7 +11,7 @@ import SnapKit
 
 class SQEmployeeDirectoryCell: UITableViewCell {
   
-  var employeeData : EmployeeDataModel? {
+  var employeeData : SQEmployeeDataModel? {
     didSet {
       employeeNameLabel.text = employeeData?.fullName
       employeePhoneLabel.text = employeeData?.phoneNumber

@@ -14,8 +14,8 @@ class SQEmployeeDataLoader: NSObject {
     super.init()
   }
   
-  public func LoadEmployeeData(completion: @escaping ([EmployeeDataModel]?) -> Void) {
-    AF.request(employeeUrl).responseDecodable(of:AllEmployeeData.self ) { response in
+  public func LoadEmployeeData(completion: @escaping ([SQEmployeeDataModel]?) -> Void) {
+    AF.request(employeeUrl).responseDecodable(of:SQAllEmployeeData.self ) { response in
        switch response.result {
          case .success(let data):
          completion(data.empoyeeData)

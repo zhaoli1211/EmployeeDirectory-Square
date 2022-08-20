@@ -13,7 +13,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
   private var tableView: UITableView!
   private let cellIdentifier = "SQContactCell"
   private var dataLoader: SQEmployeeDataLoader!
-  private var employeeData: [EmployeeDataModel]?
+  private var employeeData: [SQEmployeeDataModel]?
   
   override func viewDidLoad() {
     super.viewDidLoad()
