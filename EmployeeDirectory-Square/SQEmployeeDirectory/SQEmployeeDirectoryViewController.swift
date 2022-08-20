@@ -7,24 +7,26 @@
 
 import UIKit
 import SnapKit
+import SwiftUI
 
-class SQEmployeeDirectoryViewController: UIViewController {
+public class SQEmployeeDirectoryViewController: UIViewController {
   
-  private var tableView: UITableView!
+  public var tableView: UITableView!
   private let cellIdentifier = "SQContactCell"
-  private var dataLoader: SQEmployeeDataLoader!
-  private var employeeData: [SQEmployeeDataModel]?
+  public var dataLoader: SQEmployeeDataLoaderProtocal = SQEmployeeDataLoader()
+  public var employeeData: [SQEmployeeDataModel]?
   
-  override func viewDidLoad() {
+  public override func viewDidLoad() {
     super.viewDidLoad()
     setupTableView()
     setupNavigationItem()
-    dataLoader = SQEmployeeDataLoader()
   }
   
   private func setupNavigationItem() {
     self.navigationItem.title = "Employee Directory"
-    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(loadEmployeeData(_:)));
+    let loadAllButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(loadEmployeeData(_:)));
+    let loadMalformedButton = UIBarButtonItem(barButtonSystemItem: .pause, target: self, action: #selector(loadMalformedEmployeeData(_:)));
+    self.navigationItem.rightBarButtonItems = [loadAllButton, loadMalformedButton]
   }
   
   private func setupTableView() {
@@ -40,8 +42,15 @@ class SQEmployeeDirectoryViewController: UIViewController {
     }
   }
   
+  @objc func loadMalformedEmployeeData(_ sender: UIBarButtonItem) {
+    dataLoader.LoadEmployeeData(shouldLoadMalformed: true) { data in
+      self.employeeData = data
+      self.tableView.reloadData()
+    }
+  }
+  
   @objc func loadEmployeeData(_ sender: UIBarButtonItem) {
-    dataLoader.LoadEmployeeData { data in
+    dataLoader.LoadEmployeeData(shouldLoadMalformed: false) { data in
       self.employeeData = data
       self.tableView.reloadData()
     }
@@ -51,7 +60,7 @@ class SQEmployeeDirectoryViewController: UIViewController {
 // MARK: TableViewDelegate
 extension SQEmployeeDirectoryViewController: UITableViewDelegate
 {
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+  public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 88
   }
 }
@@ -59,13 +68,13 @@ extension SQEmployeeDirectoryViewController: UITableViewDelegate
 // MARK: TableViewDataSourece
 extension SQEmployeeDirectoryViewController: UITableViewDataSource
 {
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SQEmployeeDirectoryCell
     cell.employeeData = employeeData?[indexPath.row];
     return cell;
   }
   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
   {
     return employeeData?.count ?? 0;
   }

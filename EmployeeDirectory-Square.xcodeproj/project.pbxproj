@@ -11,6 +11,8 @@
 		5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */; };
 		5E0415C228B02D3A003FA1A4 /* SQEmployeeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C128B02D3A003FA1A4 /* SQEmployeeDataModel.swift */; };
 		5E0415C428B02F1B003FA1A4 /* SQEmployeeDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */; };
+		5E0415C628B08405003FA1A4 /* SQEmployeeDataLoaderProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C528B08405003FA1A4 /* SQEmployeeDataLoaderProtocal.swift */; };
+		5E0415C928B089E7003FA1A4 /* Constents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0415C828B089E7003FA1A4 /* Constents.swift */; };
 		5E33196928B0022F00092729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196828B0022F00092729 /* AppDelegate.swift */; };
 		5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196A28B0022F00092729 /* SceneDelegate.swift */; };
 		5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */; };
@@ -19,18 +21,10 @@
 		5E33198028B0023000092729 /* EmployeeDirectory_SquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33197F28B0023000092729 /* EmployeeDirectory_SquareTests.swift */; };
 		5E33199928B011BC00092729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E33199828B011BC00092729 /* Main.storyboard */; };
 		F5FC2BB578C4EB8AA9C7A3CA /* Pods_EmployeeDirectory_Square.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A468549E6D09CE2C8F3996E /* Pods_EmployeeDirectory_Square.framework */; };
-		FD48E06230A7F6BF2BC8F638 /* Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83741075E11BAA8851954F /* Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5E33197C28B0023000092729 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E33195D28B0022F00092729 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E33196428B0022F00092729;
-			remoteInfo = "EmployeeDirectory-Square";
-		};
-		5E33198628B0023000092729 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E33195D28B0022F00092729 /* Project object */;
 			proxyType = 1;
@@ -44,6 +38,8 @@
 		5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDirectoryCell.swift; sourceTree = "<group>"; };
 		5E0415C128B02D3A003FA1A4 /* SQEmployeeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDataModel.swift; sourceTree = "<group>"; };
 		5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDataLoader.swift; sourceTree = "<group>"; };
+		5E0415C528B08405003FA1A4 /* SQEmployeeDataLoaderProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQEmployeeDataLoaderProtocal.swift; sourceTree = "<group>"; };
+		5E0415C828B089E7003FA1A4 /* Constents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constents.swift; sourceTree = "<group>"; };
 		5E33196528B0022F00092729 /* EmployeeDirectory-Square.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EmployeeDirectory-Square.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33196828B0022F00092729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E33196A28B0022F00092729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +49,6 @@
 		5E33197628B0023000092729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E33197B28B0023000092729 /* EmployeeDirectory-SquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EmployeeDirectory-SquareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33197F28B0023000092729 /* EmployeeDirectory_SquareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectory_SquareTests.swift; sourceTree = "<group>"; };
-		5E33198528B0023000092729 /* EmployeeDirectory-SquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EmployeeDirectory-SquareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E33199828B011BC00092729 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		66999DAD9139D750730DA46B /* Pods-EmployeeDirectory-SquareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeDirectory-SquareTests.release.xcconfig"; path = "Target Support Files/Pods-EmployeeDirectory-SquareTests/Pods-EmployeeDirectory-SquareTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A468549E6D09CE2C8F3996E /* Pods_EmployeeDirectory_Square.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmployeeDirectory_Square.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,14 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				462420CEF09C60BA98458307 /* Pods_EmployeeDirectory_SquareTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E33198228B0023000092729 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD48E06230A7F6BF2BC8F638 /* Pods_EmployeeDirectory_Square_EmployeeDirectory_SquareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +103,38 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E0415C728B089DA003FA1A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5E0415C828B089E7003FA1A4 /* Constents.swift */,
+				5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */,
+				5E0415C528B08405003FA1A4 /* SQEmployeeDataLoaderProtocal.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5E0415CA28B08E2A003FA1A4 /* SQEmployeeDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */,
+				5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */,
+				5E0415C128B02D3A003FA1A4 /* SQEmployeeDataModel.swift */,
+			);
+			path = SQEmployeeDirectory;
+			sourceTree = "<group>";
+		};
+		5E0415CB28B08E4F003FA1A4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E33196828B0022F00092729 /* AppDelegate.swift */,
+				5E33196A28B0022F00092729 /* SceneDelegate.swift */,
+				5E33199828B011BC00092729 /* Main.storyboard */,
+				5E33197128B0023000092729 /* Assets.xcassets */,
+				5E33197328B0023000092729 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		5E33195C28B0022F00092729 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +151,6 @@
 			children = (
 				5E33196528B0022F00092729 /* EmployeeDirectory-Square.app */,
 				5E33197B28B0023000092729 /* EmployeeDirectory-SquareTests.xctest */,
-				5E33198528B0023000092729 /* EmployeeDirectory-SquareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,16 +158,10 @@
 		5E33196728B0022F00092729 /* EmployeeDirectory-Square */ = {
 			isa = PBXGroup;
 			children = (
-				5E33196828B0022F00092729 /* AppDelegate.swift */,
-				5E33196A28B0022F00092729 /* SceneDelegate.swift */,
-				5E33196C28B0022F00092729 /* SQEmployeeDirectoryViewController.swift */,
-				5E0415BF28B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift */,
-				5E33199828B011BC00092729 /* Main.storyboard */,
-				5E33197128B0023000092729 /* Assets.xcassets */,
-				5E33197328B0023000092729 /* LaunchScreen.storyboard */,
 				5E33197628B0023000092729 /* Info.plist */,
-				5E0415C128B02D3A003FA1A4 /* SQEmployeeDataModel.swift */,
-				5E0415C328B02F1B003FA1A4 /* SQEmployeeDataLoader.swift */,
+				5E0415CB28B08E4F003FA1A4 /* Main */,
+				5E0415CA28B08E2A003FA1A4 /* SQEmployeeDirectory */,
+				5E0415C728B089DA003FA1A4 /* Utils */,
 			);
 			path = "EmployeeDirectory-Square";
 			sourceTree = "<group>";
@@ -203,26 +215,6 @@
 			productReference = 5E33197B28B0023000092729 /* EmployeeDirectory-SquareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5E33198428B0023000092729 /* EmployeeDirectory-SquareUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E33199528B0023000092729 /* Build configuration list for PBXNativeTarget "EmployeeDirectory-SquareUITests" */;
-			buildPhases = (
-				41761A3E8C04A868043B0E02 /* [CP] Check Pods Manifest.lock */,
-				5E33198128B0023000092729 /* Sources */,
-				5E33198228B0023000092729 /* Frameworks */,
-				5E33198328B0023000092729 /* Resources */,
-				0DC1DADB18FD4C1CE4857168 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E33198728B0023000092729 /* PBXTargetDependency */,
-			);
-			name = "EmployeeDirectory-SquareUITests";
-			productName = "EmployeeDirectory-SquareUITests";
-			productReference = 5E33198528B0023000092729 /* EmployeeDirectory-SquareUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,10 +229,6 @@
 						CreatedOnToolsVersion = 13.4;
 					};
 					5E33197A28B0023000092729 = {
-						CreatedOnToolsVersion = 13.4;
-						TestTargetID = 5E33196428B0022F00092729;
-					};
-					5E33198428B0023000092729 = {
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 5E33196428B0022F00092729;
 					};
@@ -261,7 +249,6 @@
 			targets = (
 				5E33196428B0022F00092729 /* EmployeeDirectory-Square */,
 				5E33197A28B0023000092729 /* EmployeeDirectory-SquareTests */,
-				5E33198428B0023000092729 /* EmployeeDirectory-SquareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,33 +271,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E33198328B0023000092729 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DC1DADB18FD4C1CE4857168 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		166D0D76177E75112519BEF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,28 +290,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-EmployeeDirectory-SquareTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		41761A3E8C04A868043B0E02 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -404,9 +345,11 @@
 				5E0415C228B02D3A003FA1A4 /* SQEmployeeDataModel.swift in Sources */,
 				5E33196D28B0022F00092729 /* SQEmployeeDirectoryViewController.swift in Sources */,
 				5E0415C028B01E92003FA1A4 /* SQEmployeeDirectoryCell.swift in Sources */,
+				5E0415C928B089E7003FA1A4 /* Constents.swift in Sources */,
 				5E33196928B0022F00092729 /* AppDelegate.swift in Sources */,
 				5E0415C428B02F1B003FA1A4 /* SQEmployeeDataLoader.swift in Sources */,
 				5E33196B28B0022F00092729 /* SceneDelegate.swift in Sources */,
+				5E0415C628B08405003FA1A4 /* SQEmployeeDataLoaderProtocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,13 +361,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E33198128B0023000092729 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,11 +368,6 @@
 			isa = PBXTargetDependency;
 			target = 5E33196428B0022F00092729 /* EmployeeDirectory-Square */;
 			targetProxy = 5E33197C28B0023000092729 /* PBXContainerItemProxy */;
-		};
-		5E33198728B0023000092729 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E33196428B0022F00092729 /* EmployeeDirectory-Square */;
-			targetProxy = 5E33198628B0023000092729 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -666,44 +597,6 @@
 			};
 			name = Release;
 		};
-		5E33199628B0023000092729 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1243EEC42AD13D1D535C428 /* Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = EVQV4TMGNS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhaoli.EmployeeDirectory-SquareUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EmployeeDirectory-Square";
-			};
-			name = Debug;
-		};
-		5E33199728B0023000092729 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE03BD30BC82D05042D0B2F7 /* Pods-EmployeeDirectory-Square-EmployeeDirectory-SquareUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = EVQV4TMGNS;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhaoli.EmployeeDirectory-SquareUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EmployeeDirectory-Square";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -730,15 +623,6 @@
 			buildConfigurations = (
 				5E33199328B0023000092729 /* Debug */,
 				5E33199428B0023000092729 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E33199528B0023000092729 /* Build configuration list for PBXNativeTarget "EmployeeDirectory-SquareUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E33199628B0023000092729 /* Debug */,
-				5E33199728B0023000092729 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

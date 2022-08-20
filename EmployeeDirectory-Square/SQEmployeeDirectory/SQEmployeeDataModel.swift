@@ -7,15 +7,14 @@
 
 import Foundation
 
-struct SQAllEmployeeData: Decodable {
+public struct SQAllEmployeeData: Decodable {
   let empoyeeData : [SQEmployeeDataModel]
-   
    enum CodingKeys: String, CodingKey {
       case empoyeeData = "employees"
    }
 }
 
-struct SQEmployeeDataModel: Decodable {
+public struct SQEmployeeDataModel: Decodable {
   enum CodingKeys: String, CodingKey {
     case uuid = "uuid"
     case fullName = "full_name"
