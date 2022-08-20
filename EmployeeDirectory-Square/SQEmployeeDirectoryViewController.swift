@@ -18,11 +18,13 @@ class SQEmployeeDirectoryViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupTableView()
+    setupNavigationItem()
     dataLoader = SQEmployeeDataLoader()
-    dataLoader.LoadEmployeeData { data in
-      self.employeeData = data
-      self.tableView.reloadData()
-    }
+  }
+  
+  private func setupNavigationItem() {
+    self.navigationItem.title = "Employee Directory"
+    self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(loadEmployeeData));
   }
   
   private func setupTableView() {
@@ -35,6 +37,13 @@ class SQEmployeeDirectoryViewController: UIViewController {
     self.view.addSubview(tableView)
     tableView.snp.makeConstraints { make in
       make.top.left.right.bottom.equalToSuperview()
+    }
+  }
+  
+  @objc func loadEmployeeData(_ sender: UIBarButtonItem) {
+    dataLoader.LoadEmployeeData { data in
+      self.employeeData = data
+      self.tableView.reloadData()
     }
   }
 }
